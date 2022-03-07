@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>watch</title>
+	 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+        <!--jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="css\index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Lifestyle Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+											<% if(isauth){ %>
+												<li><a><span class="glyphicon glyphicon-user"></span><%= name %></a></li>
+												<li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+												<li><a href="logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+											<% } else{ %>
+												<li><a href="login"><span class="glyphicon glyphicon-shopping-cart"></span> Cart </a></li>
+												<li><a href="signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+												<li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+											<% } %>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	 <div class="container content">
+	 	<div class="jumbotron home-spacer" id="products-jumbotron">
+                <h1>Watches</h1>
+                <p>We have best watches for you. No need to hunt around, we have all in one place.</p>
+
+            </div>
+            <hr>
+
+	 <div class="container">
+                <div class="row">
+									<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa1.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Wrogn</h3>
+                                    <p>Price:1531</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p13"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa2.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Fossil</h3>
+                                    <p>Price:12,789</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p14"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa3.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Inven</h3>
+                                    <p>Price:1,531</p>
+                                     <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p15"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                     <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa4.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Fossil</h3>
+                                    <p>Price:11,499</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p16"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa5.webp" alt="">
+                                <div class="caption">
+                                    <h3>Armani Exchange</h3>
+                                    <p>Price:23,345</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p17"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa6.webp" alt="">
+                                <div class="caption">
+                                    <h3>Moss</h3>
+                                    <p>Price:1,899</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p18"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa7.webp" alt="">
+                                <div class="caption">
+                                    <h3>Tommy Hilfiger</h3>
+                                    <p>Price:13,389</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p19"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa8.webp" alt="">
+                                <div class="caption">
+                                    <h3>Fastrack</h3>
+                                    <p>Price:2,670</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p20"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa9.webp" alt="">
+                                <div class="caption">
+                                    <h3>Tryst</h3>
+                                    <p>Price:17,799</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p21"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa10.webp" alt="">
+                                <div class="caption">
+                                    <h3>Casio</h3>
+                                    <p>Price:5,999</p>
+                                    <div class="buttons"> <button onclick="myFunction()" class="cart-button" type="submit" name="pid" value="p22"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/wa11.webp" alt="">
+                                <div class="caption">
+                                    <h3>Danial Wellington</h3>
+                                    <p>Price:19,945</p>
+                                    <div class="buttons"> <button onclick="myFunction()" class="cart-button" type="submit" name="pid" value="p23"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+										</form>
+										<form action="/cart" method="post">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                                <img src="img/7.jpg" alt="">
+                                <div class="caption">
+                                    <h3>Armani Exchange</h3>
+                                    <p>Price:16,799</p>
+                                    <div class="buttons"> <button onclick="myFunction();" class="cart-button" type="submit" name="pid" value="p24"> <span class="add-to-cart">Add to cart</span> <span class="added">Item added</span> <i class="fa fa-plus"></i> <i class="fa fa-circle-thin"></i> <i class="fa fa-check"></i> </button> </div>
+                                </div>
+                            </div>
+
+                    </div>
+									</form>
+                </div>
+            </div>
+        </div>
+        <footer>
+                <div class="container">
+                    <center>
+                     <p>Copyright © Lifestyle Store. All Rights
+                    Reserved | Contact Us: +91 90000 00000”. </p>
+                    </center>
+                </div>
+        </footer>
+				<script>
+					function myFunction() {
+						console.log("hello");
+						if(isauth){
+				  		alert("Item added to Cart!");
+							console.log("hi");
+						}
+					}
+				</script>
+</body>
+</html>
